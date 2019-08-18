@@ -334,7 +334,7 @@
 			</small>
 		</div>
 		<div class="col text-right mx-2">
-			Made with <small><i class="fa fa-heart"></i></small> and hundred of <small><i class="fa fa-coffee"></i></small> by Dio Ilham.
+			Made with <small><i class="fa fa-heart"></i></small> and hundred of <small><i class="fa fa-coffee"></i></small> by mie.
 		</div>
 	</div>
 
