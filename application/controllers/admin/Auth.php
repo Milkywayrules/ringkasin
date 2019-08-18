@@ -55,7 +55,7 @@ class Auth extends CI_Controller {
   				// jika password inputan cocok dengan data di db
           $this->session->set_flashdata('success_message', 1);
 					$this->session->set_flashdata('title', 'Admin login privilege !');
-					$this->session->set_flashdata('text', 'Enjoy your time with pendekin');
+					$this->session->set_flashdata('text', 'Enjoy your time with ringkesin');
 
   				$this->session->set_userdata('login', 1);
   				$this->session->set_userdata('name', $row->name);

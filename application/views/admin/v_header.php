@@ -11,7 +11,7 @@
 
   <!-- Icon and title -->
   <link rel="icon" href="<?php echo base_url('assets/img/q_logo_1.png') ?>">
-  <title><?php echo $title; ?> - pendekin</title>
+  <title><?php echo $title; ?> - ringkesin</title>
 
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url('assets/template/sbadmin/vendor/fontawesome-free/css/all.min.css')?>" rel="stylesheet" type="text/css">
@@ -45,7 +45,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">pendekin Admin <sup>12</div>
+        <div class="sidebar-brand-text mx-3">ringkesin Admin <sup>12</div>
       </a>
 
       <!-- Divider -->

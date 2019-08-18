@@ -34,10 +34,10 @@
       // Settingan awal file excel
       $excel->getProperties()->setCreator( $this->session->username )
           ->setLastModifiedBy( $this->session->username )
-          ->setTitle( 'pendekin report on ' . $reportType )
-          ->setSubject( 'pendekin report on ' . $reportType)
-          ->setDescription( 'pendekin report on ' . $reportType )
-          ->setKeywords( 'pendekin report' );
+          ->setTitle( 'ringkesin report on ' . $reportType )
+          ->setSubject( 'ringkesin report on ' . $reportType)
+          ->setDescription( 'ringkesin report on ' . $reportType )
+          ->setKeywords( 'ringkesin report' );
       // Buat sebuah variabel untuk menampung pengaturan style dari header tabel
       $style_col = array(
           'font' => array('bold' => true), // Set font nya jadi bold
@@ -64,7 +64,7 @@
               'left' => array('style'  => PHPExcel_Style_Border::BORDER_THIN) // Set border left dengan garis tipis
           )
       );
-      $excel->setActiveSheetIndex(0)->setCellValue('B2', 'pendekin report on ' . $reportType); // Set kolom B2 dengan tulisan "DATA SISWA"
+      $excel->setActiveSheetIndex(0)->setCellValue('B2', 'ringkesin report on ' . $reportType); // Set kolom B2 dengan tulisan "DATA SISWA"
       $excel->getActiveSheet()->mergeCells('B2:H2'); // Set Merge Cell pada kolom B2 sampai H2
       $excel->getActiveSheet()->getStyle('B2')->getFont()->setBold(TRUE); // Set bold kolom B2
       $excel->getActiveSheet()->getStyle('B2')->getFont()->setSize(20); // Set font size 15 untuk kolom B2
@@ -163,7 +163,7 @@
       // Set orientasi kertas jadi LANDSCAPE
       $excel->getActiveSheet()->getPageSetup()->setOrientation(PHPExcel_Worksheet_PageSetup::ORIENTATION_LANDSCAPE);
       // Set judul file excel nya
-      $excel->getActiveSheet(0)->setTitle( 'pendekin report on ' . $reportType );
+      $excel->getActiveSheet(0)->setTitle( 'ringkesin report on ' . $reportType );
       $excel->setActiveSheetIndex(0);
       //
       // pecah date dan time
@@ -174,7 +174,7 @@
       // print_r($exp);die();
       // Proses file excel
       header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-      header("Content-Disposition: attachment; filename=[RP]pendekin-{$dateTime[0]}.xlsx"); // Set nama file excel nya
+      header("Content-Disposition: attachment; filename=[RP]ringkesin-{$dateTime[0]}.xlsx"); // Set nama file excel nya
       header('Cache-Control: max-age=0');
       $write = PHPExcel_IOFactory::createWriter($excel, 'Excel2007');
       $write->save('php://output');

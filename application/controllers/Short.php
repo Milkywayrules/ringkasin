@@ -46,7 +46,7 @@
       $id = intval($this->M_url->get_max_id()->Max_id) + 1;
       // konversi max id pada db menjadi int
       $createUrl = $this->session->createUrl;
-      if ( $this->session->createCustom == '_pndkn_cstm_xx_' ) {
+      if ( $this->session->createCustom == '_rngks_cstm_xx_' ) {
         $createCustom = $this->session->createCustom . $id;
       }else {
         $createCustom = $this->session->createCustom;
@@ -63,7 +63,7 @@
       // panggil method cek_custom() untuk cek apakah inputan custom user sudah terdata di db atau belum
       // kalau sudah redirect ke home, kalau belum maka lanjut kebawah
 
-      // VALIDASI BAHWA LINK PANJANG PERNAH DIPENDEKIN OLEH USER TERTENTU---
+      // VALIDASI BAHWA LINK PANJANG PERNAH DIringkesin OLEH USER TERTENTU---
 
       if ($exist == FALSE) {
         // jika link inputan user($exist) itu false(belum ada) di db
@@ -128,8 +128,8 @@
   		$config['white']		= array(70,130,180); // array, default is array(0,0,0)
   		$this->ciqrcode->initialize($config);
 
-      $image_name = "pendekin_{$this->session->short_url}_{$this->session->id}.png"; //buat name dari qr code sesuai dengan short_url
-      if ( $this->session->createCustom == '_pndkn_cstm_xx_' ) {
+      $image_name = "ringkesin_{$this->session->short_url}_{$this->session->id}.png"; //buat name dari qr code sesuai dengan short_url
+      if ( $this->session->createCustom == '_rngks_cstm_xx_' ) {
         $params['data'] = base_url($this->session->short_url); //data yang akan di jadikan QR CODE
       }else {
         // $image_name = 'qrcode_' . $this->session->createCustom .'.png'; //buat name dari qr code sesuai dengan nim
@@ -224,7 +224,7 @@
     public function cek_custom($inputUrl='')
     // AKAN SELALU FALSE UNTUK SEMENTARA TIDAK DIGUNAKAN
     // method untuk cek apakah custom url sudah ada di db atau belum
-    // digunakan hanya untuk validasi ketika user ingin pendekin urlnya pada home
+    // digunakan hanya untuk validasi ketika user ingin ringkesin urlnya pada home
     // $this->create() panggil $this->cek_custom() kemudian return ke $this->create() lagi
     {
       $this->_validasi_request_method();

@@ -4,7 +4,7 @@
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             Made with <small><i class="fa fa-heart"></i></small> and hundred of <small><i class="fa fa-coffee"></i></small> by me, myself, and i -
-            <span>Copyright &copy; pendekin 2019</span>
+            <span>Copyright &copy; ringkesin 2019</span>
           </div>
         </div>
       </footer>
