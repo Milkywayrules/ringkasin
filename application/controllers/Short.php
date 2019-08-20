@@ -46,7 +46,7 @@
       $id = intval($this->M_url->get_max_id()->Max_id) + 1;
       // konversi max id pada db menjadi int
       $createUrl = $this->session->createUrl;
-      if ( $this->session->createCustom == '_rngks_cstm_xx_' ) {
+      if ( $this->session->createCustom == '_rnkgsn_cstm_xx_' ) {
         $createCustom = $this->session->createCustom . $id;
       }else {
         $createCustom = $this->session->createCustom;
@@ -128,8 +128,8 @@
   		$config['white']		= array(70,130,180); // array, default is array(0,0,0)
   		$this->ciqrcode->initialize($config);
 
-      $image_name = "ringkesin_{$this->session->short_url}_{$this->session->id}.png"; //buat name dari qr code sesuai dengan short_url
-      if ( $this->session->createCustom == '_rngks_cstm_xx_' ) {
+      $image_name = "pendekin_{$this->session->short_url}_{$this->session->id}.png"; //buat name dari qr code sesuai dengan short_url
+      if ( $this->session->createCustom == '_rnkgsn_cstm_xx_' ) {
         $params['data'] = base_url($this->session->short_url); //data yang akan di jadikan QR CODE
       }else {
         // $image_name = 'qrcode_' . $this->session->createCustom .'.png'; //buat name dari qr code sesuai dengan nim

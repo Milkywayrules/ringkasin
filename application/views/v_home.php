@@ -131,7 +131,7 @@
 			text-align: center;
 		}
 
-		#pendekin{
+		#ringkesin{
 			border:none;
 			font-size:70px;
 		}
@@ -216,8 +216,8 @@
 				</div>
 			</h1>
 			<!-- <h1 id="qopasin"><a href="<?php echo base_url() ?>">QOPAS.IN</a></h1> -->
-			<h1 id="pendekin">R I N G K E S</h1>
-			<h5 id="pendekinaja">lebih singkat, lebih hebat</h5>
+			<h1 id="ringkesin">R I N G K E S</h1>
+			<h5 id="ringkesinaja">lebih singkat, lebih hebat</h5>
 			<hr style="width:10%;">
 		</center>
 		<div id="body">

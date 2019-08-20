@@ -30,7 +30,7 @@ class Home extends CI_Controller {
 			// $this->load->view('v_home');
 			$this->session->set_flashdata('createUrl', $this->input->post('url'));
 			if ($this->input->post('custom') == '') {
-							$this->session->set_flashdata('createCustom', '_rngks_cstm_xx_');
+							$this->session->set_flashdata('createCustom', '_rnkgsn_cstm_xx_');
 			}else{	$this->session->set_flashdata('createCustom', $this->input->post('custom')); }
 			redirect('short/create');
 		}
