@@ -189,7 +189,7 @@
 			<h1>
 				<div class="row">
 					<div class="col-12 text-right">
-						<span id="uppertitle">Welcome to <b>ringkes</b></span>
+						<span id="uppertitle">Welcome to <b>ringkes.in</b></span>
 						<span id="uppertitle2">V0.0</span>
 						<span id="uppertitle">{beta}</span>
 					</div>
@@ -216,7 +216,7 @@
 				</div>
 			</h1>
 			<!-- <h1 id="qopasin"><a href="<?php echo base_url() ?>">QOPAS.IN</a></h1> -->
-			<h1 id="ringkesin">R I N G K E S</h1>
+			<h1 id="ringkesin">R I N G K E S.I N</h1>
 			<h5 id="ringkesinaja">lebih singkat, lebih hebat</h5>
 			<hr style="width:10%;">
 		</center>

@@ -75,10 +75,18 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
+
+	//  UNTUK LOCALHOST
 	'hostname' => 'localhost',
-	'username' => 'ringkesi_admin', //
-	'password' => 'Leomessi10', //
-	'database' => 'ringkesi_db_ringkesin', //
+	'username' => 'root', //
+	'password' => '', //
+	'database' => 'db_ringkesin', //
+
+	//  UNTUK LIVE HOSTING
+	// 'username' => 'ringkesi_admin', //
+	// 'password' => 'Leomessi10', //
+	// 'database' => 'ringkesi_db_ringkesin', //
+
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

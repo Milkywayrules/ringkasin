@@ -100,7 +100,7 @@
         $excel->setActiveSheetIndex(0)->setCellValue('B'.$numrow, $no);
         $excel->setActiveSheetIndex(0)->setCellValue('C'.$numrow, $data->ori_url);
         $excel->setActiveSheetIndex(0)->setCellValue('D'.$numrow, $data->short_url);
-        if ( strpos($data->custom_url, 'pndkn_cstm_xx_') == 1 ) {
+        if ( strpos($data->custom_url, 'rngksn_cstm_xx_') == 1 ) {
           $custom_url = ' ';
         }else {
           $custom_url = $data->custom_url;
